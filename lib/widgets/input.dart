@@ -9,6 +9,7 @@ class Input extends StatelessWidget {
   final fontSize;
   final keyboardType;
   final width;
+  final enable;
   //List<TextInputFormatter>? inputFormatters=[];
   final sizeIcon;
   final icons;
@@ -28,6 +29,7 @@ class Input extends StatelessWidget {
     this.icons= Icons.save,
     required this.colorBorder,
     required this.background,
+    this.enable = true
   });
 
   @override
@@ -50,6 +52,7 @@ class Input extends StatelessWidget {
         children: [
           Expanded(
             child: TextFormField(
+              enabled: enable,
               controller: this.controller,
               textAlign: TextAlign.start,
               keyboardType: this.keyboardType,

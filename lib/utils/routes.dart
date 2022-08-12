@@ -1,7 +1,9 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:pescandodireitocontroleweb/screens/calendary_screen.dart';
 
+import '../screens/governament_screen.dart';
 import '../screens/login_screen.dart';
 import '../screens/navigation_screen.dart';
 
@@ -18,30 +20,14 @@ class Routes{
           return MaterialPageRoute(
               builder: (_) => NavigationScreen(index: 0)
           );
-        // case "/home" :
-        //   return MaterialPageRoute(
-        //       builder: (_) => HomeScreen()
-        //   );
-        // case "/fees" :
-        //   return MaterialPageRoute(
-        //       builder: (_) => FeesScreen()
-        //   );
-        // case "/enterprise" :
-        //   return MaterialPageRoute(
-        //       builder: (_) => EnterpriseScreen()
-        //   );
-        // case "/finances" :
-        //   return MaterialPageRoute(
-        //       builder: (_) => FinancesScreen()
-        //   );
-        // case "/delivery" :
-        //   return MaterialPageRoute(
-        //       builder: (_) => DeliveryScreen()
-        //   );
-        // case "/questions" :
-        //   return MaterialPageRoute(
-        //       builder: (_) => FeesScreen()
-        //   );
+        case "/home" :
+          return MaterialPageRoute(
+              builder: (_) => GovernamentScreen()
+          );
+        case "/fees" :
+          return MaterialPageRoute(
+              builder: (_) => CalendaryScreen()
+          );
         default :
           _erroRota();
       }

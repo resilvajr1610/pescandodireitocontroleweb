@@ -19,6 +19,7 @@ dependencies:
   auto_size_text: ^3.0.0
   page_transition: ^2.0.4
   intl: ^0.17.0
+  flutter_calendar_carousel: ^2.1.0
 
 dev_dependencies:
   flutter_test:

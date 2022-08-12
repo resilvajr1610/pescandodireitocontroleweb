@@ -237,9 +237,12 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                         ],
                       ),
                       SizedBox(height: 10),
-                      TextCustom(
-                        text: 'Pergunta',
-                        size: 14.0,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                        child: TextCustom(
+                          text: 'Pergunta',
+                          size: 14.0,
+                        ),
                       ),
                       Input(
                         controller: _controllerQuestion,
@@ -251,9 +254,12 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                         background: PaletteColor.greyLight,
                       ),
                       SizedBox(height: 20),
-                      TextCustom(
-                        text: 'Resposta',
-                        size: 14.0,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                        child: TextCustom(
+                          text: 'Resposta',
+                          size: 14.0,
+                        ),
                       ),
                       Input(
                         controller: _controllerAnswer,

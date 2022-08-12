@@ -10,4 +10,6 @@ class PaletteColor {
   static const Color star = Color(0xffEDAE0B);
   static const Color green = Color(0xff199305);
   static const Color red = Color(0xffE42020);
+  static const Color blueTitle = Color(0xff096FA7);
+  static const Color greyCalendar = Color(0xffB1B1B1);
 }
